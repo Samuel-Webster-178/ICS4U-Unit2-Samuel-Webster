@@ -9,14 +9,17 @@
 export class SamStack {
   // strstack: string[]
 
+  // variables
   constructor() {
     self.strstack = []
   }
 
+  // push item to end of list
   push(input) {
     self.strstack.push(input)
   }
 
+  // show full stack seperated by commas
   show() {
     let values = ""
     for (let counter = 0; counter < self.strstack.length; counter++) {
