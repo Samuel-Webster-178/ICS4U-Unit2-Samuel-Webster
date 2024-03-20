@@ -7,7 +7,7 @@
  */
 
 export class SamStack {
-  strstack: string[]
+  // strstack: string[]
 
   constructor() {
     self.strstack = []
