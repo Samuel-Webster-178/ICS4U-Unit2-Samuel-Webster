@@ -14,10 +14,12 @@ export class SamStack {
     self.strstack = []
   }
 
+  // checks if stack is empty
   public get isEmpty() {
     return self.strstack.length == 0
   }
 
+  // returns stack size
   public get size() {
     return self.strstack.length
   }
