@@ -14,13 +14,25 @@ export class SamStack {
     self.strstack = []
   }
 
+  public get isEmpty() {
+    return self.strstack.length == 0
+  }
+
+  public get size() {
+    return self.strstack.length
+  }
+
   // show full stack seperated by commas
   public get show() {
     let values = ""
-    for (let counter = 0; counter < self.strstack.length; counter++) {
-      values = values + self.strstack[counter] + ", "
+    if (self.strstack[0]) {
+      for (let counter = 0; counter < self.strstack.length; counter++) {
+        values = values + self.strstack[counter] + ", "
+      }
+      values = values.substring(0, values.length-2)
+    } else {
+      values = "stack is empty"
     }
-    values = values.substring(0, values.length-2)
     return values
   }
 
