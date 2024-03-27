@@ -31,7 +31,7 @@ public class SamStack {
     * @param args No args will be used
     * @return the full stack
     */
-    public String show(final String args) {
+    public String show() {
         String values = "";
         for (int counter = 0; counter < strstack.size(); counter++) {
             values = values + strstack.get(counter) + ", ";
