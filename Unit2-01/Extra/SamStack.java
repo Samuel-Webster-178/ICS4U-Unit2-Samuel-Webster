@@ -28,7 +28,6 @@ public class SamStack {
     /**
     * Show all items on stack.
     *
-    * @param args No args will be used
     * @return the full stack
     */
     public String show() {
