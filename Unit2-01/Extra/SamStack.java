@@ -19,16 +19,16 @@ public class SamStack {
 
   // push item to end of list
   public push(input) {
-    self.strstack.push(input)
+    self.strstack.push(input);
   }
 
   // show full stack seperated by commas
   public show() {
     String values = "";
     for (int counter = 0; counter < self.strstack.length; counter++) {
-      values = values + self.strstack[counter] + ", "
+      values = values + self.strstack[counter] + ", ";
     }
-    values = values.substring(0, values.length-2)
-    return values
+    values = values.substring(0, values.length-2);
+    return values;
   }
 }
