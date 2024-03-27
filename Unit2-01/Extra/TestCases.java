@@ -32,24 +32,24 @@ final class TestCases {
     */
     public static void main(final String[] args) {
         // input
-        SamStack fruits = new SamStack()
-        fruits.push("apple")
-        fruits.push("banana")
-        System.out.println("fruits: " + fruits.show())
+        SamStack fruits = new SamStack();
+        fruits.push("apple");
+        fruits.push("banana");
+        System.out.println("fruits: " + fruits.show());
 
-        SamStack colours = new SamStack()
-        colours.push("red")
-        colours.push("green")
-        colours.push("blue")
-        System.out.println("colours: " + colours.show())
+        SamStack colours = new SamStack();
+        colours.push("red");
+        colours.push("green");
+        colours.push("blue");
+        System.out.println("colours: " + colours.show());
 
-        SamStack animals = new SamStack()
-        animals.push("cat")
-        animals.push("dog")
-        animals.push("wolf")
-        animals.push("deer")
-        animals.push("rabbit")
-        System.out.println("animals: " + animals.show())
+        SamStack animals = new SamStack();
+        animals.push("cat");
+        animals.push("dog");
+        animals.push("wolf");
+        animals.push("deer");
+        animals.push("rabbit");
+        System.out.println("animals: " + animals.show());
 
         System.out.println("\nDone.");
     }
