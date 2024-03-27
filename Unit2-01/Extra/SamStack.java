@@ -6,29 +6,37 @@
 * @since   2024-03-25
 */
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
 * This is my stack.
 */
 public class SamStack {
-  String[] strstack;
+    /** The internal variable that stores stack. */
+    private List<String> strstack = new ArrayList<String>();
 
-  // variables
-  public SamStack() {
-    self.strstack = [];
-  }
-
-  // push item to end of list
-  public push(input) {
-    self.strstack.push(input);
-  }
-
-  // show full stack seperated by commas
-  public show() {
-    String values = "";
-    for (int counter = 0; counter < self.strstack.length; counter++) {
-      values = values + self.strstack[counter] + ", ";
+    /**
+    * Push a string to end of stack.
+    *
+    * @param input user input string
+    */
+    public void push(String input) {
+        strstack.add(input);
     }
-    values = values.substring(0, values.length-2);
-    return values;
-  }
+
+    /**
+    * Show all items on stack.
+    *
+    * @param args No args will be used
+    * @return the full stack
+    */
+    public String show(final String args) {
+        String values = "";
+        for (int counter = 0; counter < strstack.size(); counter++) {
+            values = values + strstack.get(counter) + ", ";
+        }
+        values = values.substring(0, values.length() - 2);
+        return values;
+    }
 }
