@@ -19,6 +19,11 @@ export class SamStack {
     return self.strstack.length == 0
   }
 
+  // return top item of stack
+  public get peak():string {
+    return self.strstack[self.strstack.length - 1]
+  }
+
   // returns stack size
   public get size() {
     return self.strstack.length
@@ -38,6 +43,11 @@ export class SamStack {
     return values
   }
 
+  // clear all items off stack
+  public clear() {
+    self.strstack = []
+  }
+
   // push item to end of list
   public push(input) {
     self.strstack.push(input)
@@ -53,16 +63,6 @@ export class SamStack {
     }
     self.strstack.splice(-1)
     return removed
-  }
-
-  // return top item of stack
-  public get peak():string {
-    return self.strstack[self.strstack.length - 1]
-  }
-
-  // clear all items off stack
-  public clear() {
-    self.strstack = []
   }
 }
 
