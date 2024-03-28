@@ -56,7 +56,7 @@ export class SamStack {
   }
 
   // return top item of stack
-  public get peek():string {
+  public get peak():string {
     return self.strstack[self.strstack.length - 1]
   }
 
