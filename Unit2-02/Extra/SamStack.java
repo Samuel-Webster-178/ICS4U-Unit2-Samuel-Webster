@@ -35,7 +35,25 @@ public class SamStack {
         for (int counter = 0; counter < strstack.size(); counter++) {
             values = values + strstack.get(counter) + ", ";
         }
-        values = values.substring(0, values.length() - 2);
+        if (strstack.size() > 0) {
+            values = values.substring(0, values.length() - 2);
+        }
         return values;
+    }
+
+    /**
+    * Pop last item from stack.
+    *
+    * @return the popped item
+    */
+    public String pop() {
+        String removed = "";
+        if (strstack.size() > 0) {
+            removed = strstack.get(strstack.size() - 1);
+            strstack.remove(strstack.size() - 1);
+        } else {
+            removed = "nothing to remove";
+        }
+        return removed;
     }
 }

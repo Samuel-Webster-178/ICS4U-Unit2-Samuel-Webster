@@ -29,16 +29,22 @@ final class TestCases {
     * @param args No args will be used
     */
     public static void main(final String[] args) {
+        final String popString = "popped: ";
+
         // input
         final SamStack fruits = new SamStack();
         fruits.push("apple");
         fruits.push("banana");
+        System.out.println(popString + fruits.pop());
+        System.out.println(popString + fruits.pop());
+        System.out.println(popString + fruits.pop());
         System.out.println("fruits: " + fruits.show());
 
         final SamStack colours = new SamStack();
         colours.push("red");
         colours.push("green");
         colours.push("blue");
+        System.out.println(popString + colours.pop());
         System.out.println("colours: " + colours.show());
 
         final SamStack animals = new SamStack();
@@ -47,6 +53,9 @@ final class TestCases {
         animals.push("wolf");
         animals.push("deer");
         animals.push("rabbit");
+        System.out.println(popString + animals.pop());
+        System.out.println(popString + animals.pop());
+        System.out.println(popString + animals.pop());
         System.out.println("animals: " + animals.show());
 
         System.out.println("\nDone.");
