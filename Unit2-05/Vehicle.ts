@@ -7,11 +7,11 @@
  */
 
 export default class Vehicle {
-  public color: string
+  private color: string
   private licencePlate: string
-  private numberOfDoors: number
-  private maxSpeed: number
-  private _speed: number
+  readonly numberOfDoors: number
+  readonly maxSpeed: number
+  readonly _speed: number
 
   // variables
   constructor(color: string, licencePlate: string, numberOfDoors: number, maxSpeed: number) {
@@ -22,8 +22,24 @@ export default class Vehicle {
     this._speed = 0
   }
 
-  public get speed() {
-    return this._speed
+  //get colour
+  public get color() {
+    return this.color
+  }
+
+  //get current speed
+  public get licencePlate() {
+    return this.licencePlate
+  }
+
+  //set colour
+  public set color(color: string) {
+    this.color = color
+  }
+
+  //set current speed
+  public set speed(licencePlate: string) {
+    this.licencePlate = licencePlate
   }
 
   // checks if stack is empty
