@@ -15,20 +15,20 @@ export default class Vehicle {
 
   // variables
   constructor(color: string, licencePlate: string, numberOfDoors: number, maxSpeed: number) {
-    self.color = color
-    self.licencePlate = licencePlate
-    self.numberOfDoors = numberOfDoors
-    self.maxSpeed = maxSpeed
+    this.color = color
+    this.licencePlate = licencePlate
+    this.numberOfDoors = numberOfDoors
+    this.maxSpeed = maxSpeed
     this._speed = 0
   }
 
   // checks if stack is empty
   public status() {
     console.log(" -> Speed: " + this._speed)
-    console.log(" -> Max Speed: " + self.maxSpeed)
-    console.log(" -> Number Of Doors: " + self.numberOfDoors)
-    console.log(" -> Licence Plate: " + self.licencePlate)
-    console.log(" -> Color: " + self.color)
+    console.log(" -> Max Speed: " + this.maxSpeed)
+    console.log(" -> Number Of Doors: " + this.numberOfDoors)
+    console.log(" -> Licence Plate: " + this.licencePlate)
+    console.log(" -> Color: " + this.color)
   }
 
   // change speed via accelerating formula
