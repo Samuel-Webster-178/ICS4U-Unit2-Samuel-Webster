@@ -22,6 +22,10 @@ export default class Vehicle {
     this._speed = 0
   }
 
+  public get speed() {
+    return this._speed
+  }
+
   // checks if stack is empty
   public status() {
     console.log(" -> Speed: " + this._speed)
