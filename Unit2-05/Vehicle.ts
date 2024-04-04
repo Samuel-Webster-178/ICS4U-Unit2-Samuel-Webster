@@ -6,7 +6,7 @@
  * @since   2024-01-01
  */
 
-export class Vehicle {
+export default class Vehicle {
   public color: string
   private licencePlate: string
   private numberOfDoors: number
@@ -19,12 +19,12 @@ export class Vehicle {
     self.licencePlate = licencePlate
     self.numberOfDoors = numberOfDoors
     self.maxSpeed = maxSpeed
-    self._speed = 0
+    this._speed = 0
   }
 
   // checks if stack is empty
-  public get status() {
-    console.log(" -> Speed: " + self.speed)
+  public status() {
+    console.log(" -> Speed: " + this._speed)
     console.log(" -> Max Speed: " + self.maxSpeed)
     console.log(" -> Number Of Doors: " + self.numberOfDoors)
     console.log(" -> Licence Plate: " + self.licencePlate)
