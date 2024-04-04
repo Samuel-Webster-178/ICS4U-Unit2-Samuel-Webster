@@ -32,6 +32,11 @@ export default class Vehicle {
     return this.licencePlate
   }
 
+  // get current speed
+  public get speed() {
+    return this._speed
+  }
+
   //set colour
   public set color(color: string) {
     this.color = color
@@ -54,10 +59,16 @@ export default class Vehicle {
   // change speed via accelerating formula
   public accelerate (accelerationPower: number, accelerationTime: number) {
     this._speed = (accelerationPower * accelerationTime) + this._speed
+    if (this._speed > this.maxSpeed) {
+      this._speed = this.maxSpeed
+    }
   }
 
   // change speed via braking formula
   public break (breakPower: number, breakTime: number) {
     this._speed = this._speed - (breakPower * breakTime)
+    if (this._speed < 0) {
+      this._speed = 0
+    }
   }
 }
