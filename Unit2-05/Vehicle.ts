@@ -43,7 +43,7 @@ export default class Vehicle {
   }
 
   //set current speed
-  public set speed(licencePlate: string) {
+  public set licencePlate(licencePlate: string) {
     this.licencePlate = licencePlate
   }
 
