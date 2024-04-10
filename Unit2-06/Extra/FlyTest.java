@@ -33,9 +33,8 @@ public final class FlyTest {
         final Jet boeing = new Jet();
         boeing.setSpeed(speed2);
         System.out.println(boeing.getSpeed());
-        // iterator name matches pattern '^(id)|([a-z][a-z0-9][a-zA-Z0-9]+)$'
-        int a = 0;
-        while (a < iterations) {
+        int iterator = 0;
+        while (iterator < iterations) {
             boeing.accelerate();
             System.out.println(boeing.getSpeed());
             if (boeing.getSpeed() > fivethousand) {
@@ -43,7 +42,7 @@ public final class FlyTest {
             } else {
                 boeing.accelerate();
             }
-            a++;
+            iterator++;
         }
         System.out.println(biplane.getSpeed());
     }
