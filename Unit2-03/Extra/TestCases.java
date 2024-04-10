@@ -41,9 +41,9 @@ final class TestCases {
         System.out.println(popString + fruits.pop());
         System.out.println(popString + fruits.pop());
         System.out.println("fruits: " + fruits.show());
-        System.out.println(lengthString + fruits.size());
 
         // linter is weird
+        System.out.println(lengthString + fruits.size());
         System.out.println(emptyString + fruits.isEmpty());
 
         final SamStack colours = new SamStack();
