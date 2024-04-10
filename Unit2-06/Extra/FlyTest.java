@@ -17,12 +17,13 @@ public class FlyTest {
         System.out.println(boeing.getSpeed());
         int x = 0;
         while(x < 4) {
+            boeing.accelerate();
+            System.out.println(boeing.getSpeed());
             if(being.getSpeed() > 5000) {
-                boeing.setSpeed(boeing.getSpeed * 2)
+                biplane.setSpeed(biplane.getSpeed * 2)
             } else {
                 boeing.accelerate();
             }
-            System.out.println(boeing.getSpeed());
             x++;
         }
         System.out.println(biplane.getSpeed());
