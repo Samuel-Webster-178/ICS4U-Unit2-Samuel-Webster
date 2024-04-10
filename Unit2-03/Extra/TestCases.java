@@ -39,14 +39,14 @@ final class TestCases {
         System.out.println(popString + fruits.pop());
         System.out.println(popString + fruits.pop());
         System.out.println("fruits: " + fruits.show());
-        System.out.println("length: " + fruits.length());
+        System.out.println("length: " + fruits.size());
         System.out.println("is empty: " + fruits.isEmpty());
 
         final SamStack colours = new SamStack();
         colours.push("red");
         colours.push("green");
         colours.push("blue");
-        System.out.println("length: " + fruits.length());
+        System.out.println("length: " + fruits.size());
         System.out.println(popString + colours.pop());
         System.out.println("colours: " + colours.show());
         System.out.println("is empty: " + fruits.isEmpty());
@@ -61,7 +61,7 @@ final class TestCases {
         System.out.println(popString + animals.pop());
         System.out.println(popString + animals.pop());
         System.out.println("animals: " + animals.show());
-        System.out.println("length: " + fruits.length());
+        System.out.println("length: " + fruits.size());
 
         System.out.println("\nDone.");
     }
