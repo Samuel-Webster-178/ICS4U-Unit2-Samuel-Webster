@@ -22,22 +22,28 @@ public final class FlyTest {
     * @param args no arguments
     */
     public static void main(String[] args) {
+        final int speed1 = 212;
+        final int speed2 = 422;
+        final int iterations = 4;
+        final int fivethousand = 5000;
+
         final Airplane biplane = new Airplane();
-        biplane.setSpeed(212);
+        biplane.setSpeed(speed1);
         System.out.println(biplane.getSpeed());
         final Jet boeing = new Jet();
-        boeing.setSpeed(422);
+        boeing.setSpeed(speed2);
         System.out.println(boeing.getSpeed());
-        int i = 0;
-        while (i < 4) {
+        // iterator name matches pattern '^(id)|([a-z][a-z0-9][a-zA-Z0-9]+)$'
+        int a = 0;
+        while (a < iterations) {
             boeing.accelerate();
             System.out.println(boeing.getSpeed());
-            if (boeing.getSpeed() > 5000) {
+            if (boeing.getSpeed() > fivethousand) {
                 biplane.setSpeed(biplane.getSpeed() * 2);
             } else {
                 boeing.accelerate();
             }
-            i++;
+            a++;
         }
         System.out.println(biplane.getSpeed());
     }
