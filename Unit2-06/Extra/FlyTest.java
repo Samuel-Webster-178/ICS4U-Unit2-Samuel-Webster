@@ -11,6 +11,14 @@
 */
 public final class FlyTest {
     /**
+    * Constructor.
+    *
+    * @param args no arguments
+    */
+    private FlyTest() {
+    }
+
+    /**
     * Set jet speed.
     *
     * @param args no arguments
