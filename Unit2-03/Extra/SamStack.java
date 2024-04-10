@@ -26,21 +26,21 @@ public class SamStack {
     }
 
     /**
-    * Checks if stack is empty.
+    * Get if stack is empty.
     *
-    * @return if stack is empty
+    * @return get if stack is empty
     */
-    public get isEmpty() {
-        return strstack.size() == 0
+    public boolean isEmpty() {
+        return strstack.size() == 0;
     }
 
     /**
-    * Returns stack size.
+    * Get stack size.
     *
-    * @return stack length
+    * @return get length
     */
-    public get size() {
-        return strstack.size()
+    public int size() {
+        return strstack.size();
     }
 
 
