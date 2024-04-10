@@ -50,11 +50,15 @@ public class SamStack {
     */
     public String show() {
         String values = "";
-        for (int counter = 0; counter < strstack.size(); counter++) {
-            values = values + strstack.get(counter) + ", ";
-        }
-        if (strstack.size() > 0) {
-            values = values.substring(0, values.length() - 2);
+        if (strstack) {
+            for (int counter = 0; counter < strstack.size(); counter++) {
+                values = values + strstack.get(counter) + ", ";
+            }
+            if (strstack.size() > 0) {
+                values = values.substring(0, values.length() - 2);
+            }
+        } else {
+            values = "stack is empty"
         }
         return values;
     }
