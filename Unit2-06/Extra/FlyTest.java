@@ -6,8 +6,15 @@
 * @since   2024-03-25
 */
 
-
+/**
+* This is the flytest class.
+*/
 public class FlyTest {
+    /**
+    * Set jet speed.
+    *
+    * @param args no arguments
+    */
     public static void main(String[] args) {
         Airplane biplane = new Airplane();
         biplane.setSpeed(212);
