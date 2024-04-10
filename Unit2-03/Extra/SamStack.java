@@ -58,7 +58,7 @@ public class SamStack {
                 values = values.substring(0, values.length() - 2);
             }
         } else {
-            values = "stack is empty"
+            values = "stack is empty";
         }
         return values;
     }
