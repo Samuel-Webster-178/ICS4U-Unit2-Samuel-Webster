@@ -6,6 +6,7 @@
 * @since   2024-03-25
 */
 
+
 public class FlyTest {
     public static void main(String[] args) {
         Airplane biplane = new Airplane();

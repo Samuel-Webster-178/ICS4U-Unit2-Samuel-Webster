@@ -6,7 +6,6 @@
 * @since   2024-03-25
 */
 
-import Airplane from ./Airplane
 
 public class Jet extends Airplane {
     private static final int MULTIPLIER = 2;
