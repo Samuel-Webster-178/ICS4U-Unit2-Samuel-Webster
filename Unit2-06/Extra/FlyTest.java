@@ -9,7 +9,7 @@
 /**
 * This is the flytest class.
 */
-public class FlyTest {
+public final class FlyTest {
     /**
     * Set jet speed.
     *

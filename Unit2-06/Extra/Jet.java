@@ -18,8 +18,8 @@ public class Jet extends Airplane {
     *
     * @param args no arguments
     */
-    public Jet(String[] args){
-        super();
+    public Jet(String[] args) {
+        // super();
     }
 
     /**

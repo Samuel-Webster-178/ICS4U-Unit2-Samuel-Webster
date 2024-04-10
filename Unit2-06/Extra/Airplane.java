@@ -18,7 +18,7 @@ public class Airplane {
     *
     * @param args no arguments
     */
-    public Airplane(String[] args){
+    public Airplane(String[] args) {
     }
 
     /**
@@ -34,6 +34,8 @@ public class Airplane {
     * Get speed.
     *
     * @param args no arguments
+    * 
+    * @return current speed
     */
     public int getSpeed(String[] args) {
         return speed;
