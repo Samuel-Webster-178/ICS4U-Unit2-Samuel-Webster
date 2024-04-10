@@ -41,8 +41,6 @@ final class TestCases {
         System.out.println(popString + fruits.pop());
         System.out.println(popString + fruits.pop());
         System.out.println("fruits: " + fruits.show());
-
-        // linter is weird
         System.out.println(lengthString + fruits.size());
         System.out.println(emptyString + fruits.isEmpty());
 

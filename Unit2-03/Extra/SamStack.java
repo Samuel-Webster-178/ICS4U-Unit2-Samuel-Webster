@@ -43,7 +43,6 @@ public class SamStack {
         return strstack.size();
     }
 
-
     /**
     * Show all items on stack.
     *
