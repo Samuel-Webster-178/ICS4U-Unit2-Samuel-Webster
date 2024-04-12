@@ -22,7 +22,7 @@ export class Jet extends Airplane {
 
     // Set jet speed.
     public setSpeed(speed: number) {
-        super.setSpeed(speed * MULTIPLIER)
+        super.setSpeed(speed * this.MULTIPLIER)
     }
 
     // Double speed.
