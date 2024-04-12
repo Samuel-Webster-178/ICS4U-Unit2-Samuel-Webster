@@ -8,7 +8,7 @@
 
 
 // This is the airplane class.
-public export class Airplane {
+export class Airplane {
     /** The internal variable that stores speed. */
     private speed: number;
 

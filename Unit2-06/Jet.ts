@@ -11,7 +11,7 @@ import { Airplane } from "./Airplane"
 /**
 * This is the jet class.
 */
-public class Jet extends Airplane {
+export class Jet extends Airplane {
     /** Jet speed change multiplier. */
     private static MULTIPLIER: number = 2;
 
