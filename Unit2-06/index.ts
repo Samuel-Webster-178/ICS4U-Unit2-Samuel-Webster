@@ -12,7 +12,7 @@ import { Jet } from "./Jet"
 /**
 * This is the flytest class.
 */
-public class FlyTest {
+class FlyTest {
     // Constructor.
     private FlyTest() {
     }
