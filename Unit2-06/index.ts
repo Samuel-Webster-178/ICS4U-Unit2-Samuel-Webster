@@ -25,7 +25,7 @@ class FlyTest {
         let boeing = new Jet()
         boeing.setSpeed(422)
         console.log(boeing.getSpeed())
-        for (i = 0; i < 4; i++) {
+        for (let i = 0; i < 4; i++) {
             boeing.accelerate()
             console.log(boeing.getSpeed())
             if (boeing.getSpeed() > 5000) {
