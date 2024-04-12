@@ -6,6 +6,8 @@
 * @since   2024-03-25
 */
 
+import { Airplane } from "./Airplane"
+
 /**
 * This is the jet class.
 */

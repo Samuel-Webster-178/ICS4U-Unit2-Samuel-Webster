@@ -6,6 +6,9 @@
 * @since   2024-03-25
 */
 
+import { Airplane } from "./Airplane"
+import { Jet } from "./Jet"
+
 /**
 * This is the flytest class.
 */
