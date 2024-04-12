@@ -13,7 +13,7 @@ import { Airplane } from "./Airplane"
 */
 export class Jet extends Airplane {
     /** Jet speed change multiplier. */
-    private static MULTIPLIER: number = 2
+    private MULTIPLIER: number = 2
 
     // Constructor.
     public Jet() {
