@@ -23,6 +23,6 @@ export class Airplane {
 
     // Get speed.
     public getSpeed(): number {
-        return speed
+        return this.speed
     }
 }
