@@ -13,20 +13,20 @@ import { Airplane } from "./Airplane"
 */
 export class Jet extends Airplane {
     /** Jet speed change multiplier. */
-    private static MULTIPLIER: number = 2;
+    private static MULTIPLIER: number = 2
 
     // Constructor.
     public Jet() {
-        // super();
+        // super()
     }
 
     // Set jet speed.
     public setSpeed(speed: number) {
-        super.setSpeed(speed * MULTIPLIER);
+        super.setSpeed(speed * MULTIPLIER)
     }
 
     // Double speed.
     public accelerate() {
-        super.setSpeed(super.getSpeed() * 2);
+        super.setSpeed(super.getSpeed() * 2)
     }
 }

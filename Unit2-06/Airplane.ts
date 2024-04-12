@@ -10,7 +10,7 @@
 // This is the airplane class.
 export class Airplane {
     /** The internal variable that stores speed. */
-    private speed: number;
+    private speed: number
 
     // Constructor.
     public Airplane() {
@@ -18,11 +18,11 @@ export class Airplane {
 
     // Set an airplane speed.
     public setSpeed(speed: number) {
-        this.speed = speed;
+        this.speed = speed
     }
 
     // Get speed.
     public getSpeed(): number {
-        return speed;
+        return speed
     }
 }

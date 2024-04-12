@@ -19,21 +19,23 @@ class FlyTest {
 
     // Set jet speed.
     public static main() {
-        biplane = new Airplane();
-        biplane.setSpeed(212);
-        console.log(biplane.getSpeed());
-        boeing = new Jet();
-        boeing.setSpeed(422);
-        console.log(boeing.getSpeed());
+        biplane = new Airplane()
+        biplane.setSpeed(212)
+        console.log(biplane.getSpeed())
+        boeing = new Jet()
+        boeing.setSpeed(422)
+        console.log(boeing.getSpeed())
         for (i = 0; i < 4; i++) {
-            boeing.accelerate();
-            console.log(boeing.getSpeed());
+            boeing.accelerate()
+            console.log(boeing.getSpeed())
             if (boeing.getSpeed() > 5000) {
-                biplane.setSpeed(biplane.getSpeed() * 2);
+                biplane.setSpeed(biplane.getSpeed() * 2)
             } else {
-                boeing.accelerate();
+                boeing.accelerate()
             }
         }
-        console.log(biplane.getSpeed());
+        console.log(biplane.getSpeed())
     }
 }
+
+FlyTest.main()
