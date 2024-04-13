@@ -29,7 +29,7 @@ export default class Bike extends Vehicle {
 
   // checks if stack is empty
   public status() {
-    super()
+    super.status()
     console.log(" -> Cadense: " + this.cadense)
   }
 

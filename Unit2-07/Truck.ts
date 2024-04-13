@@ -24,7 +24,7 @@ export default class Truck extends Vehicle {
 
   // checks if stack is empty
   public status() {
-    super()
+    super.status()
     console.log(" -> Licence Plate: " + this.licencePlate)
   }
 
