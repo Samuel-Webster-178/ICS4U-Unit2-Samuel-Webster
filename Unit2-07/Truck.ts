@@ -13,7 +13,7 @@ export class Truck extends Vehicle {
 
   // variables
   constructor(color: string, maxSpeed: number, licencePlate: string) {
-    super(colour, maxSpeed)
+    super(color, maxSpeed)
     this.licencePlate = licencePlate
   }
 

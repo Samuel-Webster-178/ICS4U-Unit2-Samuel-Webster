@@ -13,7 +13,7 @@ export class Bike extends Vehicle {
 
   // variables
   constructor(color: string, maxSpeed: number, cadense: string) {
-    super(colour, maxSpeed)
+    super(color, maxSpeed)
     this.cadense = cadense
   }
 
