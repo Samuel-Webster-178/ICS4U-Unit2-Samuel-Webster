@@ -8,7 +8,7 @@
 
 import { Vehicle } from "./Vehicle"
 
-export default class Truck extends Vehicle {
+export class Truck extends Vehicle {
   private licencePlate: string
 
   // variables

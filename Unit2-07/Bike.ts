@@ -8,7 +8,7 @@
 
 import { Vehicle } from "./Vehicle"
 
-export default class Bike extends Vehicle {
+export class Bike extends Vehicle {
   private cadense: number
 
   // variables
