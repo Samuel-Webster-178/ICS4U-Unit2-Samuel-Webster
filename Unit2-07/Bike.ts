@@ -27,6 +27,11 @@ export class Bike extends Vehicle {
     return this.cadense
   }
 
+  //get current speed
+  public get speed() {
+    return this.cadense * 2
+  }
+
   // checks if stack is empty
   public status() {
     super.status()
@@ -36,7 +41,6 @@ export class Bike extends Vehicle {
   // change speed via bike accelerating formula
   public accelerate (appliedPower: number) {
     this.cadense = this.cadense + appliedPower
-    this._speed = this.cadense * 2
   }
 
   public Ring_Bell() {
