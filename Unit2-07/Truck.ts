@@ -29,7 +29,7 @@ export class Truck extends Vehicle {
   }
 
   // change speed via accelerating formula
-  public Provide_Air(airPressure: number) {
+  public applyAir(airPressure: number) {
     this._speed = this._speed - airPressure / 2
   }
 }
