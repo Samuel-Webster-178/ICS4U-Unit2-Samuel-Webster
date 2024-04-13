@@ -12,9 +12,9 @@ export class Bike extends Vehicle {
   private cadense: number
 
   // variables
-  constructor(color: string, maxSpeed: number, cadense: string) {
+  constructor(color: string, maxSpeed: number) {
     super(color, maxSpeed)
-    this.cadense = cadense
+    this.cadense = 0
   }
 
   //set current speed
@@ -36,7 +36,7 @@ export class Bike extends Vehicle {
   // change speed via bike accelerating formula
   public accelerate (appliedPower: number) {
     this.cadense = this.cadense + appliedPower
-    this.speed = this.cadense * 2
+    this._speed = this.cadense * 2
   }
 
   public Ring_Bell() {

@@ -17,12 +17,12 @@ export class Truck extends Vehicle {
     this.licencePlate = licencePlate
   }
 
-  //get current speed
+  // get current speed
   public get licencePlate() {
     return this.licencePlate
   }
 
-  // checks if stack is empty
+  // give status
   public status() {
     super.status()
     console.log(" -> Licence Plate: " + this.licencePlate)
@@ -30,6 +30,6 @@ export class Truck extends Vehicle {
 
   // change speed via accelerating formula
   public Provide_Air(airPressure: number) {
-    this.speed = this.speed - airPressure / 2
+    this._speed = this._speed - airPressure / 2
   }
 }
