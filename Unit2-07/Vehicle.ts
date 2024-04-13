@@ -6,7 +6,7 @@
  * @since   2024-01-01
  */
 
-export default class Vehicle {
+export class Vehicle {
   private color: string
   readonly maxSpeed: number
   readonly _speed: number
