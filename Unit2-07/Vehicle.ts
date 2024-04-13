@@ -35,7 +35,7 @@ export class Vehicle {
 
   // checks if stack is empty
   public status() { 
-    console.log(" -> Speed: " + speed())
+    console.log(" -> Speed: " + this.speed)
     console.log(" -> Max Speed: " + this.maxSpeed)
     console.log(" -> Color: " + this.color)
   }
