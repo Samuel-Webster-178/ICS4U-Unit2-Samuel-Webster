@@ -37,6 +37,6 @@ public class Jet extends Airplane {
     * @param args no arguments
     */
     public void accelerate(String[] args) {
-        super.setSpeed(super.getSpeed() * 2);
+        super.setSpeed(this.getSpeed() * 2);
     }
 }
