@@ -21,7 +21,13 @@ export class SamStack {
 
   // return top item of stack
   public get peek():string {
-    return self.strstack[self.strstack.length - 1]
+    let value: string
+    if (self.strstack) {
+      value = self.strstack[self.strstack.length - 1]
+    } else {
+      value = "stack is empty"
+    }
+    return value
   }
 
   // returns stack size
