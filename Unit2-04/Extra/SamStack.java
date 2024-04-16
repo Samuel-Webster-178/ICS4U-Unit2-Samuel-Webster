@@ -82,7 +82,7 @@ public class SamStack {
     * Clear all items on stack.
     */
     public static void clear() {
-        strstack = [];
+        strstack.clear();
     }
 
     /**
