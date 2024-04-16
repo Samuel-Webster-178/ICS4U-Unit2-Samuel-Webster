@@ -38,7 +38,7 @@ final class TestCases {
         fruits.push("apple");
         fruits.push("banana");
         System.out.println("clearing stack:");
-        fruits.clear()
+        fruits.clear();
         System.out.println("fruits: " + fruits.show());
         System.out.println(lengthString + fruits.size());
         System.out.println(emptyString + fruits.isEmpty());
