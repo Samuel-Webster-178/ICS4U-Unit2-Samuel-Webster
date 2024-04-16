@@ -39,6 +39,7 @@ final class TestCases {
         fruits.push("banana");
         System.out.println("clearing stack:");
         fruits.clear();
+        System.out.println(popString + fruits.pop());
         System.out.println("fruits: " + fruits.show());
         System.out.println(lengthString + fruits.size());
         System.out.println(emptyString + fruits.isEmpty());
