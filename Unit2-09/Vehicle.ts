@@ -9,14 +9,14 @@
 export class Vehicle {
   private color: string
   readonly maxSpeed: number
-  readonly numberOfTires: int
+  protected numberOfTires: int
   readonly _speed: number
 
   // variables
-  constructor(color: string, maxSpeed: number, numberOfTires: int) {
+  constructor(color: string, maxSpeed: number) {
     this.color = color
     this.maxSpeed = maxSpeed
-    this.numberOfTires = numberOfTires
+    this.numberOfTires = -1
     this._speed = 0
   }
 

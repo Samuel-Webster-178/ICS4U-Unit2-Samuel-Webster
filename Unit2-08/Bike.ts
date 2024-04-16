@@ -12,9 +12,10 @@ export class Bike extends Vehicle {
   private cadense: number
 
   // variables
-  constructor(color: string, maxSpeed: number, numberOfTires: int) {
-    super(color, maxSpeed, numberOfTires)
+  constructor(color: string, maxSpeed: number) {
+    super(color, maxSpeed)
     this.cadense = 0
+    this.numberOfTires = 2
   }
 
   //set current speed

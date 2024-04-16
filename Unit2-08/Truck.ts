@@ -12,9 +12,10 @@ export class Truck extends Vehicle {
   private licencePlate: string
 
   // variables
-  constructor(color: string, maxSpeed: number, numberOfTires: int, licencePlate: string) {
-    super(color, maxSpeed, numberOfTires)
+  constructor(color: string, maxSpeed: number, licencePlate: string) {
+    super(color, maxSpeed)
     this.licencePlate = licencePlate
+    this.numberOfTires = 6
   }
 
   // get current speed

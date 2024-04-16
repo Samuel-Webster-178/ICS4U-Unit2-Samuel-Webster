@@ -9,7 +9,7 @@
 import { Truck } from "./Truck"
 import { Bike } from "./Bike"
 
-const bmx = new Bike('Red', 40, 2)
+const bmx = new Bike('Red', 40)
 
 console.log('Created Bmx bike.\nStatus:\n')
 bmx.status()
@@ -25,7 +25,7 @@ bmx.status()
 console.log('\nRing bell.')
 bmx.Ring_Bell()
 
-const bigTruck = new Truck('Grey', 200, 18, 'HGC-3456F')
+const bigTruck = new Truck('Grey', 200, 'HGC-3456F')
 
 console.log('Created a Truck.\nStatus:\n')
 bigTruck.status()
