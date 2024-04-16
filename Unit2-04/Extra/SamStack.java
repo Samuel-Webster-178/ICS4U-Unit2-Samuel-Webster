@@ -65,7 +65,7 @@ public class SamStack {
     */
     public String show() {
         String values = "";
-        if (strstack != null) {
+        if (strstack.size() > 0) {
             for (int counter = 0; counter < strstack.size(); counter++) {
                 values = values + strstack.get(counter) + ", ";
             }
