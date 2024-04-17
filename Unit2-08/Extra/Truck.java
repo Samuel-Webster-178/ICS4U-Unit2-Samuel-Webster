@@ -18,7 +18,7 @@ public class Truck extends Vehicle {
     /**
      * Variable.
     */
-    final private int truckTires = 6;
+    private final int truckTires = 6;
 
     /**
      * Creates the base truck.
