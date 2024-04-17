@@ -14,6 +14,7 @@ public class Truck extends Vehicle {
      * Variable.
     */
     private String licensePlateNumber = "";
+    private const int truckTires = 6;
 
     /**
      * Creates the base truck.
@@ -27,7 +28,7 @@ public class Truck extends Vehicle {
     ) {
         super(color, maxSpeed);
         this.licensePlateNumber = plateNumber;
-        this.numberOfTires = 6;
+        this.numberOfTires = truckTires;
     }
 
     /**
