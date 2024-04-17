@@ -13,7 +13,7 @@ public class Vehicle {
     /**
      * Variables.
     */
-    private int numberOfTires;
+    protected int numberOfTires;
 
     /**
      * Variables.
