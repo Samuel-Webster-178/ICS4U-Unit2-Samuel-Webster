@@ -13,7 +13,7 @@ public class Vehicle {
     /**
      * Variables.
     */
-    protected int numberOfTires;
+    private int numberOfTires;
 
     /**
      * Variables.
@@ -29,7 +29,7 @@ public class Vehicle {
      * Variables.
     */
     private double maxSpeed;
-    
+
     /**
      * Creates the base vehicle.
      *
@@ -68,6 +68,15 @@ public class Vehicle {
     */
     public double getMaxSpeed() {
         return this.maxSpeed;
+    }
+
+    /**
+     * Gets number of tires.
+     *
+     * @return get tires
+    */
+    public double getNumberOfTires() {
+        return this.numberOfTires;
     }
 
     /**
