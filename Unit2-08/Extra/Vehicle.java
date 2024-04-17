@@ -16,7 +16,7 @@ public class Vehicle {
     private String colour = "";
     private double speed;
     private double maxSpeed;
-    private int numberOfTires;
+    protected int numberOfTires;
 
     /**
      * Creates the base vehicle.
