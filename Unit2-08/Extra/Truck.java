@@ -45,10 +45,7 @@ public class Truck extends Vehicle {
      * @return the string about the vehicle's status
     */
     public String getStatus() {
-        final String lineBreak = "\n";
-        String status = " -> Speed: " + this.getSpeed() + lineBreak;
-        status += " -> MaxSpeed: " + this.getMaxSpeed() + lineBreak;
-        status += " -> Color: " + this.getColour() + lineBreak;
+        super();
         status += " -> License Plate: " + this.licensePlateNumber + lineBreak;
 
         return status;
