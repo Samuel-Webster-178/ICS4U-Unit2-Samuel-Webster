@@ -6,9 +6,6 @@
 * @since   2024-03-25
 */
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
 * The Vehicle class.
 */
