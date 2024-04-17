@@ -51,7 +51,11 @@ public class Bike extends Vehicle {
      * @return the string about the vehicle's status
     */
     public String getStatus() {
-        super();
+        final String lineBreak = "\n";
+        String status = " -> Speed: " + this.getSpeed() + lineBreak;
+        status += " -> MaxSpeed: " + this.getMaxSpeed() + lineBreak;
+        status += " -> Number of tires: " + this.numberOfTires + lineBreak;
+        status += " -> Color: " + this.getColour() + lineBreak;
         status += " -> Cadence: " + this.cadence + lineBreak;
 
         return status;
