@@ -14,7 +14,7 @@ public class Truck extends Vehicle {
      * Variable.
     */
     private String licensePlateNumber = "";
-    private const int truckTires = 6;
+    private int truckTires = 6;
 
     /**
      * Creates the base truck.
