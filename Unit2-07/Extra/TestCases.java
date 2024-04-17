@@ -17,33 +17,50 @@ public final class TestCases {
     }
 
     /**
-    * Set jet speed.
+    * Main.
     *
     * @param args no arguments
     */
     public static void main(String[] args) {
-        final int speed1 = 212;
-        final int speed2 = 422;
-        final int iterations = 4;
-        final int fivethousand = 5000;
+        // Constants
+        final double speed1 = 10;
+        final double speed2 = 15;
+        final String speedText = "New speed: ";
 
-        final Airplane biplane = new Airplane();
-        biplane.setSpeed(speed1);
-        System.out.println(biplane.getSpeed());
-        final Jet boeing = new Jet();
-        boeing.setSpeed(speed2);
-        System.out.println(boeing.getSpeed());
-        int iterator = 0;
-        while (iterator < iterations) {
-            boeing.accelerate();
-            System.out.println(boeing.getSpeed());
-            if (boeing.getSpeed() > fivethousand) {
-                biplane.setSpeed(biplane.getSpeed() * 2);
-            } else {
-                boeing.accelerate();
-            }
-            iterator++;
-        }
-        System.out.println(biplane.getSpeed());
+        // Add BMX bike
+        final Bike bmx = new Bike("Red", 40);
+        System.out.println("Created Bmx bike.\nStatus:");
+        System.out.println(bmx.getStatus());
+
+        System.out.println("\nSet the cadense to 10");
+        bmx.setCadence(speed1);
+        System.out.println(bmx.getStatus());
+
+        System.out.println("\nAccelerate by 15:");
+        bmx.accelerate(speed2);
+        System.out.println(bmx.getStatus());
+
+        System.out.println("\nRinging bell.");
+        bmx.ringBell();
+
+        // Add big truck
+        final Truck bigTruck = new Truck("Grey", 200, "HGC-3456F");
+
+        System.out.println("Created a Truck.\nStatus:");
+        System.out.println(bigTruck.getStatus());
+
+        System.out.println("\nAccelerating, 10 of power for ten seconds:");
+        bigTruck.accelerate(speed1, speed1);
+        System.out.println(speedText + bigTruck.getSpeed());
+
+        System.out.println("\nBreaking, 10 of power for 10 sec.");
+        bigTruck.accelerate(speed1, speed1);
+        System.out.println(speedText + bigTruck.getSpeed());
+
+        System.out.println("\nApplyed air pressure of 10:");
+        bigTruck.applyAir(speed1);
+        System.out.println(speedText + bigTruck.getSpeed());
+
+        System.out.println("\nDone.");
     }
 }

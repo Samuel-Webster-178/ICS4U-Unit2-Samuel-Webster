@@ -1,5 +1,5 @@
 /*
-* This program is the standard jet class.
+* This program is the standard truck class.
 *
 * @author  Samuel Webster
 * @version 1.0
@@ -7,36 +7,58 @@
 */
 
 /**
-* This is the jet class.
+ * This is truck the class.
 */
-public class Jet extends Airplane {
-    /** Jet speed change multiplier. */
-    private static final int MULTIPLIER = 2;
+public class Truck extends Vehicle {
+    /**
+     * Variable.
+    */
+    private String licensePlateNumber = "";
 
     /**
-    * Constructor.
-    *
-    * @param args no arguments
+     * Creates the base truck.
+     *
+     * @param color the base colour
+     * @param plateNumber the base license plate number
+     * @param maxSpeed the maximum speed of the vehicle
     */
-    public Jet(String[] args) {
-        // super();
+    public Truck(
+            String color, double maxSpeed, String plateNumber
+    ) {
+        super(color, maxSpeed);
+        this.licensePlateNumber = plateNumber;
     }
 
     /**
-    * Set jet speed.
-    *
-    * @param speed set speed
+     * Gets the license plate number of the vehicle.
+     *
+     * @return the current licensePlateNumber
     */
-    public void setSpeed(int speed) {
-        super.setSpeed(speed * MULTIPLIER);
+    public String getLicensePlateNumber() {
+        return this.licensePlateNumber;
     }
 
     /**
-    * Double speed.
-    *
-    * @param args no arguments
+     * Creates a string about the status of the vehicle.
+     *
+     * @return the string about the vehicle's status
     */
-    public void accelerate(String[] args) {
-        super.setSpeed(super.getSpeed() * 2);
+    public String getStatus() {
+        final String lineBreak = "\n";
+        String status = " -> Speed: " + this.getSpeed() + lineBreak;
+        status += " -> MaxSpeed: " + this.getMaxSpeed() + lineBreak;
+        status += " -> Color: " + this.getColour() + lineBreak;
+        status += " -> License Plate: " + this.licensePlateNumber + lineBreak;
+
+        return status;
+    }
+
+    /**
+     * Provides air the the wheels of the truck, which changes speed.
+     *
+     * @param airPressure applied to the truck
+    */
+    public void applyAir(double airPressure) {
+        this.setSpeed(this.getSpeed() - airPressure / 2);
     }
 }
